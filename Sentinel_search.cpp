@@ -35,3 +35,6 @@ int main()
              << "\n";
     }
 }
+
+// So the main difference between linear and Sentinel Search is that in Linear total number of Search frequency is (2n + 1), (n + 1) is of for loop running that time and n is the inside condition of for loop therefore it becomes (2n + 1);
+// But in Sentinel we are replacing the last element with the element we want to search so the max number of search will only be n;
