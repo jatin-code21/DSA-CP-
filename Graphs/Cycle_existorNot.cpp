@@ -10,7 +10,7 @@ bool dfs(int vertex, int parent)
     bool isLoopExist = false;
     for (int child : g[vertex])
     {
-        if (vis[child] && child == parent)
+        if (vis[child] && child == parent) // child node should already be visited for forming a cycle, so checking that condn only;
             continue;
         if (vis[child])
             return true;
@@ -21,12 +21,6 @@ bool dfs(int vertex, int parent)
 
 int main()
 {
-#ifndef ONLINE_JUDGE
-    freopen("input.txt",
-            "r", stdin);
-    freopen("output.txt",
-            "w", stdout);
-#endif
     int n, m;
     cin >> n >> m;
     while (m--)
