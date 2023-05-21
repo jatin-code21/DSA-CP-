@@ -32,16 +32,7 @@ int cost(int i, int j, vector<int> &freq)
 
 int main()
 {
-    int n,m;
-    cin >> n >> m;
-    vector<vector<int>> g(n+1);
-    for(int i=0;i<m;i++)
-    {
-        int x,y;
-        cin >> x >> y;
-        g[x].push_back(y);
-        g[y].push_back(x);
-    }
+    int n;
     vector<int> keys(n,0);
     vector<int> freq(n,0);
     for (int i = 0; i < n; i++)
